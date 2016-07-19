@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.apache.spark:spark-hive_2.10:1.6.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-hive_2.10/1.6.1/d6c20a3f8fe1745e46245c76c188af930feeaa29/spark-hive_2.10-1.6.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.apache.spark/spark-hive_2.10/1.6.1/f0cba4c32e744498cd992dd93f5afcbe142817c/spark-hive_2.10-1.6.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

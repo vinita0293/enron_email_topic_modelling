@@ -1,0 +1,85 @@
+----------------------------------------------------------------
+Sun Jul 17 17:16:43 IST 2016:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.2.0 - (1582446): instance a816c00e-0155-f8ae-0780-00000f4dcc38 
+on database directory /media/vinita/Projects/study_related/Workspaces/IntelliJ/Enron/metastore_db with class loader org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1@18c70ec7 
+Loaded from file:/home/vinita/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.10.2.0/47eba6736561c377f2132f5e09e2fe8084d899a9/derby-10.10.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_79-b15
+user.dir=/media/vinita/Projects/study_related/Workspaces/IntelliJ/Enron
+os.name=Linux
+os.arch=amd64
+os.version=3.19.0-25-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+Sun Jul 17 17:16:45 IST 2016 Thread[main,5,main] (XID = 771), (SESSIONID = 5), (DATABASE = metastore_db), (DRDAID = null), Cleanup action starting
+Sun Jul 17 17:16:45 IST 2016 Thread[main,5,main] (XID = 771), (SESSIONID = 5), (DATABASE = metastore_db), (DRDAID = null), Failed Statement is: EXECUTE STATEMENT SYS."getTypeInfo"
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1.doLoadClass(IsolatedClientLoader.scala:212)
+	at org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1.loadClass(IsolatedClientLoader.scala:201)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.apache.derby.impl.sql.compile.ParserImpl.getTokenManager(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ParserImpl.getParser(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ParserImpl.parseStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement20.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareMetaDataStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getTypeInfoMinion(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getTypeInfo(Unknown Source)
+	at org.datanucleus.store.rdbms.schema.RDBMSSchemaHandler.getRDBMSTypesInfo(RDBMSSchemaHandler.java:358)
+Cleanup action completed
+Sun Jul 17 17:16:46 IST 2016 Thread[main,5,main] (XID = 780), (SESSIONID = 13), (DATABASE = metastore_db), (DRDAID = null), Cleanup action starting
+Sun Jul 17 17:16:46 IST 2016 Thread[main,5,main] (XID = 780), (SESSIONID = 13), (DATABASE = metastore_db), (DRDAID = null), Failed Statement is: EXECUTE STATEMENT SYS."getTypeInfo"
+java.lang.OutOfMemoryError: PermGen space
+	at java.lang.ClassLoader.defineClass1(Native Method)
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:800)
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142)
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:449)
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:71)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:361)
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:355)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:354)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:425)
+	at org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1.doLoadClass(IsolatedClientLoader.scala:212)
+	at org.apache.spark.sql.hive.client.IsolatedClientLoader$$anon$1.loadClass(IsolatedClientLoader.scala:201)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at org.apache.derby.impl.sql.compile.ParserImpl.getTokenManager(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ParserImpl.getParser(Unknown Source)
+	at org.apache.derby.impl.sql.compile.ParserImpl.parseStatement(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepMinion(Unknown Source)
+	at org.apache.derby.impl.sql.GenericStatement.prepare(Unknown Source)
+	at org.apache.derby.impl.sql.conn.GenericLanguageConnectionContext.prepareInternalStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement20.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement30.<init>(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedPreparedStatement40.<init>(Unknown Source)
+	at org.apache.derby.jdbc.Driver40.newEmbedPreparedStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedConnection.prepareMetaDataStatement(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.prepareSPS(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQueryUsingSystemTables(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getPreparedQuery(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getTypeInfoMinion(Unknown Source)
+	at org.apache.derby.impl.jdbc.EmbedDatabaseMetaData.getTypeInfo(Unknown Source)
+	at org.datanucleus.store.rdbms.schema.RDBMSSchemaHandler.getRDBMSTypesInfo(RDBMSSchemaHandler.java:358)
+Cleanup action completed
